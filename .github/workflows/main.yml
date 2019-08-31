@@ -10,3 +10,13 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Mona"
+
+workflow "Deploy Master" {
+  on = "push"
+  resolves = ["cow"]
+}
+
+action "cow" {
+  uses = "mscoutermarsh/cowsays-action@master"
+  args = "Ship it!!!!!"
+}
