@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build:
-    name: Tommy second test
+    name: Tommy third test
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
